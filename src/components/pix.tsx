@@ -60,7 +60,7 @@ const Pix = () => {
   return (
     <>
       <CanvasI scale={scale} />
-      <input value={value} onInput={(event)=>{
+      <input type='number' value={value} onInput={(event)=>{
         setValue(Number(event.currentTarget.value))
         setScale(Number(event.currentTarget.value))
       }}/>
