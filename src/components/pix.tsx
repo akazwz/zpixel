@@ -107,14 +107,17 @@ const Pix = () => {
     tempImg.onload = () => {
       const widthT = tempImg.width
       const heightT = tempImg.height
+
+      const maxWith = document.documentElement.clientWidth
+      const maxHeight = document.documentElement.clientHeight
       // 图片过大 保持原有比例缩小
-      if (widthT > 500 || heightT > 500) {
+      if (widthT > maxWith || heightT > maxHeight) {
         if (widthT > heightT) {
-          setWidth(600)
-          setHeight(600 * (heightT / widthT))
+          setWidth(maxWith)
+          setHeight(maxWith * (heightT / widthT))
         } else {
-          setHeight(600)
-          setWidth(600 * (widthT / heightT))
+          setHeight(maxHeight)
+          setWidth(maxHeight * (widthT / heightT))
         }
       } else {
         setWidth(tempImg.width)
