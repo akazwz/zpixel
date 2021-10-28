@@ -29,6 +29,16 @@ function App() {
         const tempImg = new Image()
         tempImg.src = localImageUrl
         tempImg.onload = () => {
+            const widthT = tempImg.width
+            const heightT = tempImg.height
+            if (widthT > 500 || heightT > 500) {
+                if (widthT > heightT) {
+                    setWidth(600)
+                    setHeight(600 * (heightT / widthT))
+                } else {
+
+                }
+            }
             setWidth(tempImg.width)
             setHeight(tempImg.height)
         }
