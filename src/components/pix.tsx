@@ -1,4 +1,5 @@
 import React, { FormEvent, useEffect, useRef, useState } from 'react'
+import catGift from '../resources/qozlkjkr.gif'
 
 interface Props {
   scale: number,
@@ -332,7 +333,9 @@ const Pix = () => {
           }}>
           保存
         </button>
-        <div className='pixelart-to-css-bao'></div>
+      </div>
+      <div>
+        <img src={catGift} alt='ani cat' />
       </div>
     </div>
   )
