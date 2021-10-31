@@ -56,8 +56,6 @@ const WideCardMedia = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            p: 1,
-            m: 1,
             bgcolor: '#cfe8fc',
             height: '60vh',
             justifyContent: 'center',
@@ -118,7 +116,8 @@ const WideCardMedia = () => {
           sx={{
             backgroundColor: 'black',
             color: 'white',
-            height: '27vh'
+            height: '25vh',
+            mt: 1,
           }}
         >
           <Grid item xs={7}>
@@ -141,17 +140,25 @@ const WideCardMedia = () => {
               }} />
             </Stack>
           </Grid>
-          <Grid item xs={5}>
-            <img src={catGift} alt='ani cat' />
+          <Grid item xs={5} sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <img
+              src={catGift}
+              alt='ani cat'
+              height='100vh'
+              width='100vw'
+            />
           </Grid>
         </Grid>
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'row',
-            p: 1,
-            m: 1,
             bgcolor: '#c0d6e7',
+            mt: 1,
             height: '3vh',
             justifyContent: 'center',
             alignItems: 'center'
