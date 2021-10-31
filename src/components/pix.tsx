@@ -1,4 +1,6 @@
 import React, { FormEvent, useEffect, useRef, useState } from 'react'
+import Slider from '@mui/material/Slider'
+import Stack from '@mui/material/Stack';
 import catGift from '../resources/qozlkjkr.gif'
 
 interface Props {
@@ -298,6 +300,9 @@ const Pix = () => {
           palette
         </label>
       </div>
+      <Stack spacing={2} direction='row' sx={{ mb: 1 }} alignItems='center'>
+        <Slider aria-label='Volume' value={30} />
+      </Stack>
       <div>
         <button
           style={{
