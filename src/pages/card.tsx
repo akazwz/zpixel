@@ -2,23 +2,15 @@ import React, { ChangeEvent, useRef, useState } from 'react'
 import CssBaseline from '@mui/material/CssBaseline'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import IconButton from '@mui/material/IconButton'
-import Card from '@mui/material/Card'
-import CardMedia from '@mui/material/CardMedia'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import FormControl from '@mui/material/FormControl'
-import FormLabel from '@mui/material/FormLabel'
 import ImagePlus from 'pixelarticons/svg/image-plus.svg'
 import Upload from 'pixelarticons/svg/upload.svg'
 import PixelArtIcons from 'pixelarticons/svg/pixelarticons.svg'
-import Save from 'pixelarticons/svg/save.svg'
 import Fill from 'pixelarticons/svg/fill.svg'
 import FillHalf from 'pixelarticons/svg/fill-half.svg'
-import Next from 'pixelarticons/svg/next.svg'
-import { Button, Checkbox, Divider, Grid, SvgIcon, Typography } from '@mui/material'
+import { Button, Checkbox, Grid, SvgIcon } from '@mui/material'
 import catGift from '../resources/wxpchoua.gif'
 import Slider from '@mui/material/Slider'
-import { VolumeDown } from '@mui/icons-material'
 import Stack from '@mui/material/Stack'
 import PixCanvas from '../components/PixCanvas'
 
@@ -313,7 +305,6 @@ const WideCardMedia = () => {
         </Box>
       </Container>
     </React.Fragment>
-
   )
 }
 
