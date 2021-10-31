@@ -207,7 +207,12 @@ const Pix = () => {
   }
 
   return (
-    <div style={{ textAlign: 'center', backgroundColor: 'grey' }}>
+    <div style={{
+      textAlign: 'center',
+      backgroundColor: 'grey',
+      fontFamily: 'zpix',
+      fontSize: 27
+    }}>
       <div>
         {srcURL === '' ?
           <div style={{
@@ -219,7 +224,7 @@ const Pix = () => {
             justifyContent: 'center',
             margin: '0 auto'
           }}>
-            请上传图片
+            请上传照片
           </div>
           :
           <CanvasI
@@ -293,28 +298,41 @@ const Pix = () => {
         </label>
       </div>
       <div>
-        <button onClick={() => {
-          if (paletteIndex == paletteList.length - 1) {
-            setPalette(paletteList[0])
-            setPaletteIndex(0)
-          } else {
-            setPalette(paletteList[paletteIndex + 1])
-            setPaletteIndex(paletteIndex + 1)
-          }
+        <button
+          style={{
+            fontFamily: 'zpix',
+            fontSize: 20
+          }}
 
-        }}>
+          onClick={() => {
+            if (paletteIndex == paletteList.length - 1) {
+              setPalette(paletteList[0])
+              setPaletteIndex(0)
+            } else {
+              setPalette(paletteList[paletteIndex + 1])
+              setPaletteIndex(paletteIndex + 1)
+            }
+
+          }}>
           换调色板
         </button>
       </div>
       <div>
-        <button onClick={() => {
-          const a = document.createElement('a')
-          a.href = pixURL
-          a.download = 'pixel.png'
-          a.click()
-        }}>
+        <button
+          style={{
+            fontFamily: 'zpix',
+            fontSize: 20
+          }}
+
+          onClick={() => {
+            const a = document.createElement('a')
+            a.href = pixURL
+            a.download = 'pixel.png'
+            a.click()
+          }}>
           保存
         </button>
+        <div className='pixelart-to-css-bao'></div>
       </div>
     </div>
   )
