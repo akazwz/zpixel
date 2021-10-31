@@ -59,7 +59,7 @@ const WideCardMedia = () => {
             p: 1,
             m: 1,
             bgcolor: '#cfe8fc',
-            height: '70vh',
+            height: '60vh',
             justifyContent: 'center',
             alignItems: 'center'
           }}
@@ -117,7 +117,8 @@ const WideCardMedia = () => {
           container
           sx={{
             backgroundColor: 'black',
-            color: 'white'
+            color: 'white',
+            height: '27vh'
           }}
         >
           <Grid item xs={7}>
@@ -151,7 +152,7 @@ const WideCardMedia = () => {
             p: 1,
             m: 1,
             bgcolor: '#c0d6e7',
-            height: '5vh',
+            height: '3vh',
             justifyContent: 'center',
             alignItems: 'center'
           }}
