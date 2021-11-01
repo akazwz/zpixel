@@ -14,7 +14,7 @@ import Slider from '@mui/material/Slider'
 import Stack from '@mui/material/Stack'
 import PixCanvas from '../components/PixCanvas'
 
-const WideCardMedia = () => {
+const HomePage = () => {
   const fileRef = useRef<HTMLInputElement>(null)
 
   const [scale, setScale] = useState(10)
@@ -308,4 +308,4 @@ const WideCardMedia = () => {
   )
 }
 
-export default WideCardMedia
+export default HomePage

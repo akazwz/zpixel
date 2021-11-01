@@ -1,12 +1,10 @@
-import React, { FormEvent, useState } from 'react'
-import PixTwo from './pages/pixtwo'
-import './App.css'
-import WideCardMedia from './pages/card'
+import React from 'react'
+import HomePage from './pages/HomePage'
 
 function App () {
   return (
     <div>
-      <WideCardMedia />
+      <HomePage />
     </div>
   )
 }
